@@ -1,0 +1,8 @@
+Eureka Server:
+    Web, Eureka Server
+    
+Zuul Server:
+    Web, Eureka Client, Zuul, Web-Service
+    
+Microservice:
+    Eureka Client, Rest Data
