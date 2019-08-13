@@ -1,0 +1,53 @@
+PRODUCT:
+GET: localhost:8200/Product
+POST: localhost:8200/Product
+Request: 
+    {
+	"name": "Pencil",
+	"description": "Writing purpose",
+	"price": 10, 
+	"sellingPrice":20,
+	"quantityAvailable": 25
+	}
+ PUT: localhost:8200/Product
+ Request: 
+    {
+    "id": 1,
+    "name": "Pen",
+    "description": "Writing / Drawing purpose",
+    "price": 10,
+    "sellingPrice": 20,
+    "quantityAvailable": 25
+    }
+ GET: localhost:8200/Products/2
+ GET: localhost:8200/Product/pen
+ DELETE: localhost:8200/Product/2
+ 
+ CUSTOMER:
+ GET:   localhost:8100/Customer
+ GET:   localhost:8100/Customers/4
+ POST:  localhost:8100/Customer
+ Request:
+    {
+	 "firstName": "Praseela",
+	 "lastName":" Radhakrishnan",
+	 "age": 20,
+	 "address":"Chennai",
+	 "mobileNumber": 99827282
+    }
+ PUT:   localhost:8100/Customer
+ Request:
+    {
+    "id": 4,
+    "firstName": "Kalai",
+    "lastName": " Sekar",
+    "age": 20,
+    "address": "Tanjavur",
+    "mobileNumber": 99827282
+    }
+ DELETE:  localhost:8100/Customer/4
+ 
+ Using RestTemplate:
+ GET:   http://localhost:8100/Customer/getAllProduct/1
+ GET:   http://localhost:8100/Customer/getAllProduct
+  
